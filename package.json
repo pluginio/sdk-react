@@ -1,0 +1,54 @@
+{
+  "name": "sdk-react",
+  "version": "0.0.0",
+  "description": "Official Plugin.IO react SDK.",
+  "declaration": true,
+  "keywords": [
+    "react",
+    "reactjs",
+    "plugin.io",
+    "pluginio",
+    "plugin",
+    "pwa",
+    "app",
+    "sdk",
+    "monetize",
+    "monetise",
+    "ads",
+    "ad",
+    "advert",
+    "nft",
+    "blockchain",
+    "crypto",
+    "payment",
+    "scaffold",
+    "template"
+  ],
+  "author": "Gary Paluk",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pluginio/sdk-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pluginio/sdk-react/issues"
+  },
+  "homepage": "https://github.com/pluginio/sdk-react#readme",
+  "exclude": [
+      "node_modules",
+      "dist"
+  ],
+  "dependencies": {
+    "@pluginio/sdk": "git+https://github.com/pluginio/sdk.git#dev"
+  },
+  "devDependencies": {
+    "react": "^17.0.1",
+    "@types/react": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  }
+}
