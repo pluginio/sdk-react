@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "description": "Official Plugin.IO react SDK.",
   "declaration": true,
+  "types": "dist/PluginProvider.d.ts",
+  "main": "dist/sdk-react.js",
   "keywords": [
     "react",
     "reactjs",
@@ -41,12 +43,23 @@
       "node_modules",
       "dist"
   ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"No test specified\" && exit 0"
+  },
   "dependencies": {
     "@pluginio/sdk": "git+https://github.com/pluginio/sdk.git#dev"
   },
   "devDependencies": {
     "react": "^17.0.1",
-    "@types/react": "^17.0.1"
+    "@types/react": "^17.0.1",
+    "rollup": "^2.44.0",
+    "rollup-plugin-javascript-obfuscator": "^1.0.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.3",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1"
   },
   "peerDependencies": {
     "react": "^17.0.1"
